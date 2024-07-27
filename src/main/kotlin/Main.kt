@@ -1,41 +1,27 @@
 fun main() {
-    //val value cant be changed whereas var value can be changed
-    val userName = "Osama"
-    var age = 24
+    var x = 5
+    val y = 3
+    //expression:evaluates in a single value
+    println("x + y = ${x + y}")
+    println("x - y = ${x - y}")
+    println("x * y = ${x * y}")
+    println("x / y = ${x / y}")
+    println("x % y = ${x % y}")
+
+    //precedence:
+    println("3 + 3 * 4 = ${3+3*4}")
+    println("(3 + 3) * 4 = ${(3+3)*4}")
+
+    x=1
+
+    println("x = ${x++}")
+    println("x = ${++x}")
 
 
-    age += 1
-    println("Hello $userName and my age is $age")
-
-//Variables data types:
-    val maxIntegerValue = Int.MAX_VALUE
-    val minIntegerValue = Int.MIN_VALUE
-
-    println("Integer max value: $maxIntegerValue")
-    println("Integer min value: $minIntegerValue")
+    println("x = ${x--}")
+    println("x = ${--x}")
 
 
-    val maxByteVal = Byte.MAX_VALUE
-    val minByteVal = Byte.MIN_VALUE
-    println("Byte max value: $maxByteVal")
-    println("Byte min value: $minByteVal")
-
-    val maxShortVal = Short.MAX_VALUE
-    val minShortVal = Short.MIN_VALUE
-    println("Short max value: $maxShortVal")
-    println("Short min value: $minShortVal")
 
 
-    val maxLongVal = Long.MAX_VALUE
-    val minLongVal = Long.MIN_VALUE
-    println("Long max value: $maxLongVal")
-    println("Long min value: $minLongVal")
-
-    //datatype inference for floating number is double if we want float we have to initialise a number with f
-    val number = 2.5f
-    val myChar = 'a'
-    val boolVal = false
-    println("Floating number:  $number")
-    println("Char variable:  $myChar")
-    println("Boolean variable:  $boolVal")
 }
