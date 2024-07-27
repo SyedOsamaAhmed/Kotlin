@@ -26,11 +26,16 @@ fun main() {
     println("Short min value: $minShortVal")
 
 
-    val maxLongVal=Long.MAX_VALUE
-    val minLongVal=Long.MIN_VALUE
+    val maxLongVal = Long.MAX_VALUE
+    val minLongVal = Long.MIN_VALUE
     println("Long max value: $maxLongVal")
     println("Long min value: $minLongVal")
 
-
-
+    //datatype inference for floating number is double if we want float we have to initialise a number with f
+    val number = 2.5f
+    val myChar = 'a'
+    val boolVal = false
+    println("Floating number:  $number")
+    println("Char variable:  $myChar")
+    println("Boolean variable:  $boolVal")
 }
