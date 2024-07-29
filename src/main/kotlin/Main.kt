@@ -1,27 +1,19 @@
 fun main() {
-    var x = 5
-    val y = 3
-    //expression:evaluates in a single value
-    println("x + y = ${x + y}")
-    println("x - y = ${x - y}")
-    println("x * y = ${x * y}")
-    println("x / y = ${x / y}")
-    println("x % y = ${x % y}")
+    val alarm = 7
+//    when (alarm) {
+//        in 1..10 ->
+//            println("The number is in range 1..10")
+//        12, 7, 14 ->
+//            println("time is $alarm")
+//        else ->
+//            println("else condition ran")
+//
+//    }
 
-    //precedence:
-    println("3 + 3 * 4 = ${3+3*4}")
-    println("(3 + 3) * 4 = ${(3+3)*4}")
-
-    x=1
-
-    println("x = ${x++}")
-    println("x = ${++x}")
-
-
-    println("x = ${x--}")
-    println("x = ${--x}")
-
-
-
+    when{
+        alarm<=10-> println("Number is in range 1..10")
+        alarm==8||alarm==7->println("time is $alarm")
+        else-> println("else condition ran")
+    }
 
 }
