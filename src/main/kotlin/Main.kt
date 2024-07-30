@@ -1,12 +1,23 @@
 fun main() {
- println(sum(4,5,6,7,8,9,12,13,42))
+// for(i in 1..10){
+//     println(i)
+// }
+
+// for loop(decreasing order)
+//    for (i in 10 downTo 1)
+//        println(i)
+
+// for loop with steps (for jumps of 2)
+//    for (i in 1..<10 step 2) {
+//        println(i)
+//    }
+
+
+    var number=0
+    while(number<=10){
+        println(number)
+        number++
+    }
 
 }
-//passing indefinite no of arguments to a function using vararg
-fun sum(vararg numbers:Int):Int{
-    var res=0
-    for(number in numbers){
-        res+=number
-    }
-    return res
-}
+
